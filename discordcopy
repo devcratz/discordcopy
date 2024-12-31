@@ -1,0 +1,10 @@
+-- Roblox Script: Copies text to the clipboard
+local textToCopy = "https://discord.gg/hGbGBsWP"
+
+-- Check if the setclipboard function is available
+if setclipboard then
+    setclipboard(textToCopy)
+    print("Text copied to clipboard!")
+else
+    print("Clipboard access not supported!")
+end
